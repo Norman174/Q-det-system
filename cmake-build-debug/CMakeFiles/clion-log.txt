@@ -1,0 +1,42 @@
+"D:\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - NMake Makefiles" "D:\VRK_BACKUP\Работает на компиляторе mpich\VKR_WITH_MPI"
+-- The C compiler identification is MSVC 19.29.30137.0
+-- The CXX compiler identification is MSVC 19.29.30137.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - failed
+-- Check for working C compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/cl.exe
+-- Check for working C compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/cl.exe - broken
+CMake Error at D:/CLion 2021.2.3/bin/cmake/win/share/cmake-3.20/Modules/CMakeTestCCompiler.cmake:66 (message):
+  The C compiler
+
+    "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/cl.exe"
+
+  is not able to compile a simple test program.
+
+  It fails with the following output:
+
+    Change Dir: D:/VRK_BACKUP/Р Р°Р±РѕС‚Р°РµС‚ РЅР° РєРѕРјРїРёР»СЏС‚РѕСЂРµ mpich/VKR_WITH_MPI/cmake-build-debug/CMakeFiles/CMakeTmp
+    
+    Run Build Command(s):nmake -f Makefile /nologo cmTC_5c90d\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_5c90d.dir\build.make /nologo -L                  CMakeFiles\cmTC_5c90d.dir\build
+    Building C object CMakeFiles/cmTC_5c90d.dir/testCCompiler.c.obj
+    	"D:\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_5c90d.dir\testCCompiler.c.obj.d --working-dir="D:\VRK_BACKUP\в•ЁСЂСЃСЋР„СЂС…Р„ СЌСЂ СЉСЋСЊСЏС€С‹В Р„СЋРЃС… mpich\VKR_WITH_MPI\cmake-build-debug\CMakeFiles\CMakeTmp" --filter-prefix="" -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @C:\Users\Alex\AppData\Local\Temp\nm6DBB.tmp
+    Linking C executable cmTC_5c90d.exe
+    	"D:\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_5c90d.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\mt.exe --manifests -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_5c90d.dir\objects1.rsp @C:\Users\Alex\AppData\Local\Temp\nm6E58.tmp
+    LINK Pass 1: command "C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_5c90d.dir\objects1.rsp /out:cmTC_5c90d.exe /implib:cmTC_5c90d.lib /pdb:D:\VRK_BACKUP\???????? ?? ??????????? mpich\VKR_WITH_MPI\cmake-build-debug\CMakeFiles\CMakeTmp\cmTC_5c90d.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_5c90d.dir/intermediate.manifest CMakeFiles\cmTC_5c90d.dir/manifest.res" failed (exit code 1201) with the following output:
+    LINK : fatal error LNK1201: РћС€РёР±РєР° РїСЂРё Р·Р°РїРёСЃРё РІ Р±Р°Р·Сѓ РґР°РЅРЅС‹С… "D:\VRK_BACKUP\???????? ?? ??????????? mpich\VKR_WITH_MPI\cmake-build-debug\CMakeFiles\CMakeTmp\cmTC_5c90d.pdb" РїСЂРѕРіСЂР°РјРјС‹; РІРѕР·РјРѕР¶РЅРѕ, РЅРµ С…РІР°С‚Р°РµС‚ РјРµСЃС‚Р° РЅР° РґРёСЃРєРµ, РЅРµРґРѕРїСѓСЃС‚РёРјС‹Р№ РїСѓС‚СЊ РёР»Рё РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РїСЂР°РІ
+    NMAKE : fatal error U1077: "D:\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" : С‚СЋС‡С‚РЃСЂв€™С…СЌСЌв€љС‰ СЉСЋС„ "0xffffffff"
+    Stop.
+    NMAKE : fatal error U1077: "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\nmake.exe" : С‚СЋС‡С‚РЃСЂв€™С…СЌСЌв€љС‰ СЉСЋС„ "0x2"
+    Stop.
+    
+    
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:14 (project)
+
+
+-- Configuring incomplete, errors occurred!
+See also "D:/VRK_BACKUP/Р Р°Р±РѕС‚Р°РµС‚ РЅР° РєРѕРјРїРёР»СЏС‚РѕСЂРµ mpich/VKR_WITH_MPI/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+See also "D:/VRK_BACKUP/Р Р°Р±РѕС‚Р°РµС‚ РЅР° РєРѕРјРїРёР»СЏС‚РѕСЂРµ mpich/VKR_WITH_MPI/cmake-build-debug/CMakeFiles/CMakeError.log".
