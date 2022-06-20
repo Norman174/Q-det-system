@@ -339,7 +339,6 @@ double calculate_qterm(double** A, double** B, string qterm, bool qterm_type)   
 }
 
 
-
 int main(int argc, char **argv)
 {
     clock_t start_prog = clock();
@@ -441,8 +440,6 @@ int main(int argc, char **argv)
         #pragma omp barrier
     }
 
-
-
     MPI_Barrier(MPI_COMM_WORLD);
     MPI_Reduce(temp_result, final_result, QTERM_COUNT, MPI_DOUBLE, MPI_SUM, 0, MPI_COMM_WORLD);
     MPI_Reduce(temp_qterm_flags, qterm_flags, QTERM_COUNT, MPI_SHORT, MPI_SUM, 0, MPI_COMM_WORLD);
@@ -470,13 +467,19 @@ int main(int argc, char **argv)
     log.close();
 
     delete[] qdet;
-    for (i=0;i<A_COLUMN_NUMBER;i++)
-        delete[] A[i];
-    delete[] A;
+    if (USING_A)
+    {
+        for (i=0;i<A_COLUMN_NUMBER;i++)
+            delete[] A[i];
+        delete[] A;
+    }
 
-    for (i=0;i<B_COLUMN_NUMBER;i++)
-        delete[] B[i];
-    delete[] B;
+    if (USING_B)
+    {
+        for (i=0;i<B_COLUMN_NUMBER;i++)
+            delete[] B[i];
+        delete[] B;
+    }
 
     delete[] qterm_flags;
     delete[] final_result;
